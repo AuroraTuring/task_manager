@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "/", to: "welcome#index"
+
+  get "/tasks", to: "tasks#index"
 end
