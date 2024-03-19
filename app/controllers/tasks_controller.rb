@@ -41,4 +41,8 @@ class TasksController < ApplicationController
     Task.destroy(params[:id])
     redirect_to '/tasks'
   end
+
+  def show_me_the_tasks
+    all_tasks = Task.all
+  end
 end
